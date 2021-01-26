@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 
 body, html{
-  font-family: 'Coda Caption', sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 
 .col{
@@ -15,65 +15,70 @@ body, html{
   position: relative;
 }
 
+/* clearfix */
+
 .row:after{
   content: '';
   display: table;
   clear: both;
 }
 
-.product{
-  width: 50%;
+/* classi per background blocchi */
+
+.red{
+  background-color: #ff0000;
+}
+
+.green{
+  background-color: #008000;
+}
+
+.yellow{
+  background-color: #ffff00;
+}
+
+/* selettori per prodotti e testi sotto i prodotti */
+
+p{
+  text-transform: uppercase;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1;
+}
+
+.tyellow{
+  color: #ffff00;
+}
+
+.tgreen{
+  color: #008000;
 }
 
 img{
   width: 100%;
 }
 
-.red{
-  background-color: red;
-}
-
-.green{
-  background-color: green;
-}
-
-.yellow{
-  background-color: yellow;
-}
-
-h1{
-  text-transform: uppercase;
-  font-size: 2em;
-  text-align: center;
-}
-
-.tyellow{
-  color: yellow;
-}
-
-.tgreen{
-  color: green;
-}
-
 .product{
+  width: 50%;
   position: absolute;
   left: 50%;
   top:50%;
   transform: translate(-50%, -50%);
 }
 
+/* selettori per buttons */
 
-.button{
+button{
+  font-family: 'Kanit', sans-serif;
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: lightgrey;
+  background-color: #ffffff;
   display: inline-block;
   margin-right: 30px;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 14px;
-
+  font-size: 10px;
+  border: none;
+  font-weight: bolder;
 }
 
 .buttons{
@@ -81,4 +86,8 @@ h1{
   top: 5%;
   right: 3%;
   margin-right: -30px;
+}
+
+.buttons:hover button{
+  cursor: pointer;
 }
