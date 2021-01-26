@@ -1,0 +1,84 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body, html{
+  font-family: 'Coda Caption', sans-serif;
+}
+
+.col{
+  height: 100vh;
+  float: left;
+  width: 100vw;
+  position: relative;
+}
+
+.row:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.product{
+  width: 50%;
+}
+
+img{
+  width: 100%;
+}
+
+.red{
+  background-color: red;
+}
+
+.green{
+  background-color: green;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+}
+
+.tyellow{
+  color: yellow;
+}
+
+.tgreen{
+  color: green;
+}
+
+.product{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.button{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: lightgrey;
+  display: inline-block;
+  margin-right: 30px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+
+}
+
+.buttons{
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  margin-right: -30px;
+}
